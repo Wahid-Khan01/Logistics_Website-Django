@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 100%;
+            max-width: 300px;
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2980b9;
+        }
+
+        .card-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+{% endblock css %}
+{% block body %}
+<main>
+    <section id="industries-we-serve">
+        <div class="container">
+            <h1 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Industries We Serve</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="{% static 'images/paint-industry.jpg' %}" alt="Paint Industry">
+                    <div class="card-content">
+                        <h2 class="card-title">Paint Industry</h2>
+                        <p class="card-description">Serving the paint industry with reliable logistics solutions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/textile-industry.jpg' %}" alt="Textile Industry">
+                    <div class="card-content">
+                        <h2 class="card-title">Textile Industry</h2>
+                        <p class="card-description">Efficient transport for textile manufacturing and distribution.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/fmcg.jpg' %}" alt="Fast-Moving Consumer Goods">
+                    <div class="card-content">
+                        <h2 class="card-title">Fast-Moving Consumer Goods</h2>
+                        <p class="card-description">Ensuring fast and reliable delivery for FMCG products.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/heavy-duty-vehicles.webp' %}" alt="Heavy Duty Vehicles">
+                    <div class="card-content">
+                        <h2 class="card-title">Heavy Duty Vehicles</h2>
+                        <p class="card-description">Transport solutions for heavy-duty vehicles and equipment.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/pharma-industry.webp' %}" alt="Pharma Industry">
+                    <div class="card-content">
+                        <h2 class="card-title">Pharma Industry</h2>
+                        <p class="card-description">Specialized logistics for the pharmaceutical industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/electrical-equipment.webp' %}" alt="Electrical Equipment">
+                    <div class="card-content">
+                        <h2 class="card-title">Electrical Equipment</h2>
+                        <p class="card-description">Reliable delivery of electrical equipment and components.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/spare-parts.webp' %}" alt="Spare Parts">
+                    <div class="card-content">
+                        <h2 class="card-title">Spare Parts</h2>
+                        <p class="card-description">Efficient logistics for spare parts and accessories.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/chemicals.webp' %}" alt="Chemicals">
+                    <div class="card-content">
+                        <h2 class="card-title">Chemicals</h2>
+                        <p class="card-description">Safe and compliant transport for the chemical industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/pumps-valves.webp' %}" alt="Pumps & Valves">
+                    <div class="card-content">
+                        <h2 class="card-title">Pumps & Valves</h2>
+                        <p class="card-description">Logistics solutions for pumps, valves, and related products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock body %}

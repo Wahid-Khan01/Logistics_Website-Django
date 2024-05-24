@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% block css %}
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 2em;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Button Styles */
+        button {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+{% endblock css %}
+{% block body %}
+<main>
+    <section id="air-freight-services">
+        <div class="container">
+            <h1 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Air Freight Logistic Services</h1>
+            <p>Air freight is a shipping method that involves the transportation of goods by aircraft. This service is ideal for businesses needing fast delivery, high-value cargo, or shipments to locations not easily accessible by other means.</p>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Benefits of Air Freight:</h2>
+            <ul>
+                <li>Speed: Air freight is the fastest mode of transport, making it ideal for urgent shipments.</li>
+                <li>Reliability: With frequent flight schedules, air freight offers reliable delivery times.</li>
+                <li>Security: Air freight is considered one of the most secure shipping methods, with stringent regulations and handling procedures.</li>
+                <li>Global Reach: Air freight can reach virtually any destination worldwide, making it suitable for international shipping.</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">How Air Freight Works:</h2>
+            <p>In air freight shipping, goods are transported from the shipper's location to the airport by truck. The cargo is then loaded onto an aircraft and flown to the destination airport.</p>
+            <p>At the destination airport, the cargo goes through customs clearance before being delivered to the consignee's location by truck or other means.</p>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Types of Cargo Suitable for Air Freight:</h2>
+            <p>Air freight is suitable for a variety of cargo types, including:</p>
+            <ul>
+                <li>Time-sensitive shipments</li>
+                <li>High-value goods</li>
+                <li>Perishable items</li>
+                <li>Medical supplies</li>
+                <li>Small to medium-sized packages</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">The Air Freight Shipping Process:</h2>
+            <ol>
+                <li>Booking: The shipper books space with an air freight carrier.</li>
+                <li>Pickup: Goods are picked up from the shipper's location and transported to the airport.</li>
+                <li>Air Transport: Cargo is loaded onto an aircraft and flown to the destination airport.</li>
+                <li>Customs Clearance: At the destination, the cargo goes through customs clearance procedures.</li>
+                <li>Delivery: Once cleared, the cargo is delivered to the consignee's location.</li>
+            </ol>
+        </div>
+    </section>
+</main>
+{% endblock body %}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% block css %}
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    color: #666;
+    margin-left: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@keyframes scale {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+/* Animation for h1 and h2 */
+h1:hover, h2:hover {
+    animation: scale 0.5s alternate infinite ease-in-out;
+}
+
+
+</style>
+    
+{% endblock css %}
+    
+<title>About Us - Logistics Company</title>
+
+<main>
+    <section id="about">
+        <div class="container">
+            <h1 style="font-size: 2.5rem;" onmouseover="this.style.fontSize='3.5rem'" onmouseout="this.style.fontSize='2.5rem'">About Us</h1>
+            <p>Welcome to <b style="color: red;">Freight Sequence Logistic</b>, your trusted partner in logistics solutions.</p>
+            <p>Founded in 2021, we have been providing efficient and reliable transportation services for over [Number] years.</p>
+            <p>At Freight Sequence Logistic, we are committed to:</p>
+            <ul>
+                <li>Delivering shipments with precision and timeliness</li>
+                <li>Ensuring customer satisfaction through exceptional service</li>
+                <li>Embracing innovation to stay ahead in the industry</li>
+            </ul>
+            <p>Our team of dedicated professionals works tirelessly to meet and exceed our clients' expectations, making us a leader in the logistics sector.</p>
+            <p>Join us in our mission to revolutionize the way goods are transported around the globe.</p>
+            
+                <h2 style="font-size: 2rem;" onmouseover="this.style.fontSize='3rem'" onmouseout="this.style.fontSize='2rem'">Discover the Heart of Our Logistics Journey:</h2>
+                <p>At Freight Sequence Logistic, we redefine logistics with a commitment to excellence and innovation. With a rich tapestry of experience woven into every shipment, we traverse the globe, connecting businesses and communities with seamless efficiency.</p>
+                <p>Our journey is fueled by a passion for precision and reliability. From the bustling ports to the open skies, we orchestrate intricate supply chains with meticulous care, ensuring timely deliveries and unparalleled customer satisfaction.</p>
+                <p>But our story extends beyond mere logistics; it's about forging enduring partnerships and making a tangible impact. We understand that behind every shipment lies a story of opportunity, growth, and progress. That's why we embrace challenges with unwavering resolve, transforming obstacles into pathways for success.</p>
+                <p>As pioneers in the industry, we embrace innovation as our compass, navigating the ever-evolving landscape of global trade with agility and foresight. Our cutting-edge technologies and forward-thinking strategies empower us to anticipate trends, adapt to change, and deliver value that transcends expectations.</p>
+                <p>Yet, amidst the complexities of the modern world, one thing remains constant: our unwavering dedication to service excellence. Guided by integrity and fueled by passion, we stand as a beacon of reliability, lighting the way forward for businesses around the world.</p>
+                <p>Join us on this journey of discovery, where every shipment is a testament to our commitment to excellence, innovation, and the relentless pursuit of perfection. Together, let's build a future where logistics knows no bounds, and possibilities are limitless.</p>
+            
+        </div>
+    </section>
+</main>
+
+{% endblock body %}

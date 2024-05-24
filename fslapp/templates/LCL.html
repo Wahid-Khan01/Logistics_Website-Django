@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% block css %}
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 2em;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Button Styles */
+        button {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+{% endblock css %}
+{% block body %}
+<main>
+    <section id="lcl-services">
+        <div class="container">
+            <h1 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">LCL Logistic Services</h1>
+            <p>LCL (Less-than-Container Load) is a shipping service where multiple shippers share space in a single container. This service is ideal for businesses that have smaller quantities of cargo that do not require a full container.</p>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Benefits of LCL:</h2>
+            <ul>
+                <li>Cost savings: LCL allows businesses to share the cost of shipping, making it a more economical option for smaller shipments.</li>
+                <li>Flexibility: LCL shipments can be arranged more frequently, providing greater flexibility in scheduling and shipping smaller volumes of goods.</li>
+                <li>Reduced inventory costs: By shipping smaller quantities more frequently, businesses can reduce the costs associated with holding large inventories.</li>
+                <li>Accessibility: LCL makes it easier for smaller businesses to access international shipping without the need for a full container load.</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">How LCL Works:</h2>
+            <p>In LCL shipping, cargo from multiple shippers is consolidated into a single container. Each shipper is responsible for delivering their goods to a consolidation warehouse, where the cargo is loaded into the container.</p>
+            <p>Once the container is fully loaded, it is sealed and transported to the port for shipping. At the destination port, the container is unloaded, and each shipper's goods are separated and delivered to their respective final destinations.</p>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Types of Cargo Suitable for LCL:</h2>
+            <p>LCL is suitable for a variety of cargo types, including:</p>
+            <ul>
+                <li>Small or medium-sized shipments</li>
+                <li>Goods that do not require a full container</li>
+                <li>Seasonal products with fluctuating demand</li>
+                <li>Samples and prototypes for testing and evaluation</li>
+                <li>Lower-value items where cost savings are critical</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">The LCL Shipping Process:</h2>
+            <ol>
+                <li>Booking: The shipper books the required space in a container with the shipping carrier.</li>
+                <li>Consolidation: The shipper delivers their goods to a consolidation warehouse where they are combined with other shipments.</li>
+                <li>Transportation: The consolidated container is transported by truck to the port for shipping.</li>
+                <li>Customs Clearance: At the destination port, the container goes through customs clearance procedures.</li>
+                <li>Delivery: Once cleared, the individual shipments are separated and delivered to their respective final destinations.</li>
+            </ol>
+        </div>
+    </section>
+</main>
+{% endblock body %}

@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block css %}
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 2em;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Button Styles */
+        button {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+{% endblock css %}
+{% block body %}
+<main>
+    <section id="customs-clearance-services">
+        <div class="container">
+            <h1 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Customs Clearance Services</h1>
+            <p>Customs clearance is a critical process in international shipping that involves preparing and submitting documentation required to facilitate the import and export of goods across borders. This service ensures that shipments meet all regulatory requirements, allowing them to enter or leave a country without issues.</p>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Benefits of Customs Clearance Services:</h2>
+            <ul>
+                <li>Compliance with regulations: Professional customs clearance services ensure that all necessary regulations and legal requirements are met, reducing the risk of delays and fines.</li>
+                <li>Efficiency: Experienced customs brokers can expedite the clearance process, minimizing delays and ensuring timely delivery of goods.</li>
+                <li>Cost savings: Proper documentation and compliance can help avoid costly penalties and storage fees.</li>
+                <li>Risk management: Expert advice on customs regulations and tariffs helps businesses navigate complex international trade laws.</li>
+                <li>Documentation handling: Customs brokers handle all the necessary paperwork, simplifying the process for businesses and ensuring accuracy.</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">How Customs Clearance Works:</h2>
+            <p>Customs clearance involves several key steps, including:</p>
+            <ul>
+                <li>Documentation preparation: This includes invoices, shipping documents, and any required licenses or permits.</li>
+                <li>Submission: The prepared documents are submitted to the appropriate customs authorities for review.</li>
+                <li>Inspection: Customs officials may inspect the shipment to verify contents and ensure compliance with regulations.</li>
+                <li>Assessment: Duties, taxes, and fees are assessed based on the shipment's value, type, and destination.</li>
+                <li>Release: Once all requirements are met and payments made, the shipment is cleared for delivery to its final destination.</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Types of Cargo Requiring Customs Clearance:</h2>
+            <p>Customs clearance is necessary for a wide range of cargo types, including:</p>
+            <ul>
+                <li>Commercial goods for resale</li>
+                <li>Personal effects and household goods</li>
+                <li>Industrial equipment and machinery</li>
+                <li>Pharmaceuticals and medical supplies</li>
+                <li>Agricultural products and food items</li>
+            </ul>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">The Customs Clearance Process:</h2>
+            <ol>
+                <li>Documentation: Collect and prepare all necessary documents, including invoices, shipping documents, and permits.</li>
+                <li>Submission: Submit documents to customs authorities for review and processing.</li>
+                <li>Inspection: Customs may conduct a physical inspection of the shipment to ensure compliance.</li>
+                <li>Assessment: Customs authorities assess duties, taxes, and fees based on the shipment details.</li>
+                <li>Payment: Pay any assessed duties, taxes, and fees to customs authorities.</li>
+                <li>Release: Once cleared, the shipment is released and can be delivered to its final destination.</li>
+            </ol>
+
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Common Challenges in Customs Clearance:</h2>
+            <ul>
+                <li>Incorrect documentation: Inaccurate or incomplete paperwork can cause delays and additional costs.</li>
+                <li>Regulatory changes: Keeping up with constantly changing international trade laws and regulations can be challenging.</li>
+                <li>Tariff classifications: Misclassification of goods can lead to incorrect duty assessments and potential fines.</li>
+                <li>Compliance with local laws: Different countries have unique requirements that must be met for successful clearance.</li>
+                <li>Language barriers: Communication issues can arise when dealing with customs authorities in different countries.</li>
+            </ul>
+
+        </div>
+    </section>
+</main>
+{% endblock body %}

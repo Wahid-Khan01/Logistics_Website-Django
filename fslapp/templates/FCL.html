@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% block css %}
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#fcl-services .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+footer .container{
+    background-color: rgba(19, 5, 5, 0.616) !important;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 2em;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+
+    </style>
+{% endblock css %}
+{% block body %}
+<main>
+    <section id="fcl-services">
+        <div class="container">
+            <h1 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">FCL Logistic Services</h1>
+            <p>FCL (Full Container Load) is a type of shipping service that allows businesses to book an entire shipping container to transport their goods. This service is ideal for businesses with large quantities of cargo or those requiring the security and convenience of dedicated container space.</p>
+            
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Benefits of FCL:</h2>
+            <ul>
+                <li>Greater control over shipment: With FCL, you have exclusive use of the container, allowing you to load and seal the container according to your requirements.</li>
+                <li>Reduced risk of damage: Since your cargo is not combined with other shipments, there is a lower risk of damage during transit.</li>
+                <li>Efficient transportation: FCL shipments are typically faster and more direct compared to less-than-container-load (LCL) shipments, as there are fewer handling processes involved.</li>
+                <li>Cost-effective for large shipments: FCL can be more cost-effective than LCL for businesses shipping large volumes of goods.</li>
+            </ul>
+            
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">How FCL Works:</h2>
+            <p>In FCL shipping, the entire container, whether it's a 20-foot or 40-foot container, is exclusively reserved for one shipper's cargo. The shipper is responsible for loading and securing the goods inside the container.</p>
+            <p>Once loaded, the container is sealed and transported to the port for shipping. At the destination port, the container is unloaded and cleared through customs before being delivered to the final destination.</p>
+            
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">Types of Cargo Suitable for FCL:</h2>
+            <p>FCL is suitable for a wide range of cargo types, including:</p>
+            <ul>
+                <li>Bulky or heavy items</li>
+                <li>Fragile goods requiring extra protection</li>
+                <li>Temperature-sensitive products</li>
+                <li>High-value items requiring enhanced security</li>
+                <li>Goods requiring specific handling or storage conditions</li>
+            </ul>
+            
+            <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='#000'">The FCL Shipping Process:</h2>
+            <ol>
+                <li>Booking: The shipper books the entire container for their cargo with the shipping carrier.</li>
+                <li>Loading: The shipper loads their goods into the container and seals it before transport.</li>
+                <li>Transportation: The container is transported by truck to the port for shipping.</li>
+                <li>Customs Clearance: At the destination port, the container goes through customs clearance procedures.</li>
+                <li>Delivery: Once cleared, the container is delivered to the consignee's location for unloading.</li>
+            </ol>
+            
+        </div>
+    </section>
+</main>
+
+{% endblock body %}
