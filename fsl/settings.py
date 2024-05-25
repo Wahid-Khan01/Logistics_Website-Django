@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wknvu)=oqs2i)@@8*wyf%4@j6n_%@v)$r*g(l%mw55bo_+36lu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = False
 
 ALLOWED_HOSTS = ['freight-sequence-90b420370845.herokuapp.com', 'localhost', '127.0.0.1']
 
